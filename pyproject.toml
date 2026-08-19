@@ -1,0 +1,28 @@
+[project]
+name = "intelliscan"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.14.0",
+    "einops>=0.8.2",
+    "fastapi>=0.141.1",
+    "numpy>=2.5.2",
+    "pillow>=12.3.0",
+    "python-multipart>=0.0.32",
+    "qwen-vl-utils>=0.0.14",
+    "reflex>=0.9.8",
+    "requests>=2.34.2",
+    "timm>=1.0.28",
+    "torch>=2.13.0",
+    "transformers==4.49.0",
+    "uvicorn>=0.52.1",
+]
+
+[project.scripts]
+intelliscan = "intelliscan:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
